@@ -5,20 +5,17 @@
 using namespace std;
 
 int main() {
-    // open file into object
-    ifstream theFile("FahrenheitTemperature.txt");
+    
+    ifstream theFile("FahrenheitTemperature.txt"); // open file into object
 
-    // Declare variables
-    string name;
+    string name; // Declare variables
     int temp;
 
-    // out file object
-    ofstream outFile("CelciusTemperature.txt");
+    ofstream outFile("CelciusTemperature.txt"); // out file object
 
-    // while loop to convert and then write file  
     while (theFile >> name >> temp) {
-        temp = (temp - 32) * 5 / 9;
-        outFile << name << " " << temp << endl;
+        temp = (temp - 32) * 5 / 9; // convert temp
+        outFile << name << " " << temp << endl; // write each line
     }
 
     return 0;
