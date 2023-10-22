@@ -1,6 +1,6 @@
 # Beginner-Projects
 
-# Compound Interest Calculator
+Compound Interest Calculator
 
 Summarize the project and what problem it was solving.
 This calculator utilized C++ to calculate compound interest and show the potential interest earned.
